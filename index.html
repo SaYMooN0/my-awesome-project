@@ -1,70 +1,67 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная - Название вашего сайта</title>
-    <meta name="description" content="Краткое описание главной страницы вашего сайта">
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная - Название вашего сайта</title>
+  <meta name="description" content="Краткое описание главной страницы вашего сайта">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <a href="/">Логотип или название сайта</a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="about.html">О нас</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1>Добро пожаловать на наш сайт!</h1>
-        <section id="services">
-            <h2>Наши услуги</h2>
-            <p>Описание предоставляемых услуг...</p>
-            <a href="#contacts">Связаться с нами</a>
-        </section>
-        <section id="portfolio">
-            <h2>Портфолио</h2>
-            <p>Примеры наших работ...</p>
-            <p>Куча текста чтобы было видно что прокручивается</p>
-            <p>Куча текста чтобы было видно что прокручивается</p>
-            <p>Куча текста чтобы было видно что прокручивается</p>
-            <p>Куча текста чтобы было видно что прокручивается</p>
-            <p>Куча текста чтобы было видно что прокручивается</p>
-            <p>Куча текста чтобы было видно что прокручивается</p>
-            <p>Куча текста чтобы было видно что прокручивается</p>
-            <p>Куча текста чтобы было видно что прокручивается</p>
-            <p>Куча текста чтобы было видно что прокручивается</p>
-            <p>Куча текста чтобы было видно что прокручивается</p>
-            <p>Куча текста чтобы было видно что прокручивается</p>
-            <p>Куча текста чтобы было видно что прокручивается</p>
-            <p>Куча текста чтобы было видно что прокручивается</p>
-            <p>Куча текста чтобы было видно что прокручивается</p>
-            <p>Куча текста чтобы было видно что прокручивается</p>
-            <p>Куча текста чтобы было видно что прокручивается</p>
-            <p>Куча текста чтобы было видно что прокручивается</p>
-            <p>Куча текста чтобы было видно что прокручивается</p>
-            <p>Куча текста чтобы было видно что прокручивается</p>
-            <p>Куча текста чтобы было видно что прокручивается</p>
-            <p>Куча текста чтобы было видно что прокручивается</p>
-            <p>Куча текста чтобы было видно что прокручивается</p>
-            <p>Куча текста чтобы было видно что прокручивается</p>
-            <p>Куча текста чтобы было видно что прокручивается</p>
-            <p>Куча текста чтобы было видно что прокручивается</p>
-        </section>
-        <section id="contacts">
-            <h2>Контактная информация</h2>
-            <p>Наши контакты...</p>
-            <a href="contacts.html">Подробнее</a>
-        </section>
-        <footer>
-            <p>&copy; 2025 Название вашего сайта. Все права защищены.</p>
-            <p>Телефон: +7 (123) 456-78-90</p>
-        </footer>
+  <header class="site-header container">
+    <a class="site-header__brand" href="index.html">Лого нашего сайта</a>
+    <nav class="site-header__nav site-nav" aria-label="Основная навигация">
+      <ul class="site-nav__list">
+        <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="about.html">О нас</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="contacts.html" aria-current="page">Связаться</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="form.html" aria-current="page">Форма</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" type="button" aria-pressed="false">Тема</button>
+  </header>
+  <main class="container">
+    <h1>Добро пожаловать на наш сайт</h1>
+    <section class="hero" aria-label="Промо">
+      <div class="hero__inner">
+        <h2>Мы создаём понятные интерфейсы</h2>
+        <p>Помогаем бизнесу и людям находить общий язык.</p>
+        <a class="btn" href="#contacts">Связаться</a>
+      </div>
+    </section>
+    <section id="services">
+      <h2>Наши услуги</h2>
+      <p>Описание предоставляемых услуг.</p>
+      <a class="button" href="#contacts">Связаться с нами</a>
+    </section>
+    <section id="portfolio">
+      <h2>Портфолио</h2>
+      <p>Примеры наших работ.</p>
+      <img src="img/card-640.jpg" srcset="img/card-640.jpg 640w, img/card-960.jpg 960w, img/card-1280.jpg 1280w"
+        sizes="(max-width: 700px) 92vw, (max-width: 1200px) 640px, 960px" alt="Проект: макет мобильного приложения"
+        loading="lazy">
+    </section>
+    <section class="media" aria-label="Видео-презентация">
+      <div class="media__box">
+        <video controls preload="metadata" poster="video/poster.jpg">
+          <source src="video/promo.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+    <section id="contacts">
+      <h2>Контактная информация</h2>
+      <p>Наши контакты.</p>
+      <a class="button" href="contacts.html">Подробнее</a>
+    </section>
+  </main>
+  <footer class="container">
+    <p>&copy; 2025 Название вашего сайта. Все права защищены.</p>
+    <p>Телефон: +7 (123) 456-78-90</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
