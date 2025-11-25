@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,66 +8,104 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="assets/favicon.ico">
 </head>
+
 <body>
 
-<a class="jump-link" href="#main">К содержанию</a>
+  <a class="jump-link" href="#main">К содержанию</a>
 
-<header class="topbar">
-  <img class="topbar__logo" src="images.png" alt="Логотип" width="32" height="32">
+  <header class="topbar">
+    <img class="topbar__logo" src="images.png" alt="Логотип" width="32" height="32">
 
-  <nav class="mainmenu">
-    <ul class="mainmenu__list">
-      <li><a class="mainmenu__link mainmenu__link--current" href="index.html">Главная</a></li>
-      <li><a class="mainmenu__link" href="about.html">О нас</a></li>
-      <li><a class="mainmenu__link" href="gallery.html">Галерея</a></li>
-      <li><a class="mainmenu__link" href="contacts.html">Контакты</a></li>
-    </ul>
-  </nav>
-</header>
+    <nav class="mainmenu">
+      <ul class="mainmenu__list">
+        <li><a class="mainmenu__link mainmenu__link--current" href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" color="currentColor" stroke="currentColor"
+              fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M12.8924 2.80982L21.4876 9.59547C21.8112 9.85095 22 10.2405 22 10.6528C22 11.3969 21.3969 12 20.6528 12H20V15.5C20 18.3284 20 19.7426 19.1213 20.6213C18.2426 21.5 16.8284 21.5 14 21.5H10C7.17157 21.5 5.75736 21.5 4.87868 20.6213C4 19.7426 4 18.3284 4 15.5V12H3.34716C2.60315 12 2 11.3969 2 10.6528C2 10.2405 2.1888 9.85095 2.5124 9.59547L11.1076 2.80982C11.3617 2.60915 11.6761 2.5 12 2.5C12.3239 2.5 12.6383 2.60915 12.8924 2.80982Z" />
+              <path
+                d="M14.5 21.5V17C14.5 16.0654 14.5 15.5981 14.299 15.25C14.1674 15.022 13.978 14.8326 13.75 14.701C13.4019 14.5 12.9346 14.5 12 14.5C11.0654 14.5 10.5981 14.5 10.25 14.701C10.022 14.8326 9.83261 15.022 9.70096 15.25C9.5 15.5981 9.5 16.0654 9.5 17V21.5" />
+            </svg>
+            Главная
+          </a></li>
+        <li><a class="mainmenu__link" href="about.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" color="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round" stroke="currentColor">
+              <path
+                d="M21.5 12.6863V11.3137C21.5 9.67871 21.5 8.8612 21.1955 8.12612C20.891 7.39104 20.313 6.81297 19.1569 5.65685L18.3431 4.84315C17.187 3.68702 16.609 3.10896 15.8739 2.80448C15.1388 2.5 14.3213 2.5 12.6863 2.5H11.3137C9.67871 2.5 8.8612 2.5 8.12612 2.80448C7.39104 3.10896 6.81297 3.68702 5.65685 4.84315L4.84315 5.65685C3.68702 6.81298 3.10896 7.39104 2.80448 8.12612C2.5 8.8612 2.5 9.67871 2.5 11.3137V12.6863C2.5 14.3213 2.5 15.1388 2.80448 15.8739C3.10896 16.609 3.68702 17.187 4.84315 18.3431L5.65685 19.1569C6.81297 20.313 7.39104 20.891 8.12612 21.1955C8.8612 21.5 9.67871 21.5 11.3137 21.5H12.6863C14.3213 21.5 15.1388 21.5 15.8739 21.1955C16.609 20.891 17.187 20.313 18.3431 19.1569L19.1569 18.3431C20.313 17.187 20.891 16.609 21.1955 15.8739C21.5 15.1388 21.5 14.3213 21.5 12.6863Z" />
+              <path d="M12 16L12 11.5" />
+              <path d="M12 8.01172V8.00172" />
+            </svg>О нас</a></li>
+        <li><a class="mainmenu__link" href="gallery.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" color="currentColor" stroke="currentColor"
+              fill="none" stroke="currentColor">
+              <path
+                d="M6 17.9745C6.1287 19.2829 6.41956 20.1636 7.07691 20.8209C8.25596 22 10.1536 22 13.9489 22C17.7442 22 19.6419 22 20.8209 20.8209C22 19.6419 22 17.7442 22 13.9489C22 10.1536 22 8.25596 20.8209 7.07691C20.1636 6.41956 19.2829 6.1287 17.9745 6" />
+              <path
+                d="M2 10C2 6.22876 2 4.34315 3.17157 3.17157C4.34315 2 6.22876 2 10 2C13.7712 2 15.6569 2 16.8284 3.17157C18 4.34315 18 6.22876 18 10C18 13.7712 18 15.6569 16.8284 16.8284C15.6569 18 13.7712 18 10 18C6.22876 18 4.34315 18 3.17157 16.8284C2 15.6569 2 13.7712 2 10Z" />
+              <path
+                d="M2 11.1185C2.61902 11.0398 3.24484 11.001 3.87171 11.0023C6.52365 10.9533 9.11064 11.6763 11.1711 13.0424C13.082 14.3094 14.4247 16.053 15 18" />
+              <path d="M12.9998 7H13.0088" />
+            </svg>
 
-<main id="main">
-  <h1>Добро пожаловать!</h1>
+            Галерея
+          </a></li>
+        <li><a class="mainmenu__link" href="contacts.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" color="currentColor" fill="none"
+              stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M4.91186 10.5413L7.55229 7.90088C8.09091 7.36227 8.27728 6.56642 8.05944 5.83652C7.8891 5.26577 7.69718 4.57964 7.56961 3.99292C7.45162 3.45027 6.97545 3 6.42012 3H4.91186C3.8012 3 2.88911 3.90384 3.01094 5.0078C3.93709 13.3996 10.6004 20.0629 18.9922 20.9891C20.0962 21.1109 21 20.1988 21 19.0881V17.5799C21 17.0246 20.5479 16.569 20.0015 16.4696C19.3988 16.36 18.7611 16.1804 18.2276 16.0103C17.4611 15.7659 16.6091 15.9377 16.0403 16.5065L13.4587 19.0881" />
+            </svg>
+            Контакты
+          </a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <section class="promo">
-    <h2>Мы создаём удобные и современные решения</h2>
-    <p>Короткий текст о компании — кто мы и чем занимаемся.</p>
-  </section>
+  <main id="main">
+    <h1>Добро пожаловать!</h1>
 
-  <section class="block">
-    <h2 class="block__title">Наши услуги</h2>
-    <p>Основные направления работы и то, что мы предлагаем.</p>
-    <a class="action-btn" href="contacts.html">Связаться</a>
-  </section>
+    <section class="promo">
+      <h2>Мы создаём удобные и современные решения</h2>
+      <p>Короткий текст о компании — кто мы и чем занимаемся.</p>
+    </section>
 
-  <section class="block">
-    <h2 class="block__title">Портфолио</h2>
-    <div class="preview-grid">
-      <article class="card">
-        <h3 class="card__title">Проект 1</h3>
-        <p class="card__text">Краткое описание первого проекта.</p>
-      </article>
-      <article class="card">
-        <h3 class="card__title">Проект 2</h3>
-        <p class="card__text">Описание второго проекта.</p>
-      </article>
-      <article class="card">
-        <h3 class="card__title">Проект 3</h3>
-        <p class="card__text">Описание третьего проекта.</p>
-      </article>
-    </div>
-  </section>
+    <section class="block">
+      <h2 class="block__title">Наши услуги</h2>
+      <p>Основные направления работы и то, что мы предлагаем.</p>
+      <a class="action-btn" href="contacts.html">Связаться</a>
+    </section>
 
-  <section class="block">
-    <h2 class="block__title">Контакты</h2>
-    <p>Мы всегда рады новым обращениям.</p>
-    <a class="action-btn" href="contacts.html">Подробнее</a>
-  </section>
-</main>
+    <section class="block">
+      <h2 class="block__title">Портфолио</h2>
+      <div class="preview-grid">
+        <article class="card">
+          <h3 class="card__title">Проект 1</h3>
+          <p class="card__text">Краткое описание первого проекта.</p>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Проект 2</h3>
+          <p class="card__text">Описание второго проекта.</p>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Проект 3</h3>
+          <p class="card__text">Описание третьего проекта.</p>
+        </article>
+      </div>
+    </section>
 
-<footer class="footer">
-  <p>&copy; 2024 Обновлённый сайт</p>
-  <p>Телефон: +7 (123) 456-78-90</p>
-</footer>
+    <section class="block">
+      <h2 class="block__title">Контакты</h2>
+      <p>Мы всегда рады новым обращениям.</p>
+      <a class="action-btn" href="contacts.html">Подробнее</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Обновлённый сайт</p>
+    <p>Телефон: +7 (123) 456-78-90</p>
+  </footer>
 
 </body>
+
 </html>
