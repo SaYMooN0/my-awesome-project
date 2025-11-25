@@ -1,46 +1,58 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>О нас - Название вашего сайта</title>
-  <meta name="description" content="Краткое описание страницы about">
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <title>О нас — Обновлённый сайт</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/favicon.ico">
 </head>
-
 <body>
-  <header class="site-header container">
-    <a class="site-header__brand" href="index.html">Лого нашего сайта</a>
-    <nav class="site-header__nav site-nav" aria-label="Основная навигация">
-      <ul class="site-nav__list">
-        <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
-        <li class="site-nav__item"><a class="site-nav__link" href="about.html">О нас</a></li>
-        <li class="site-nav__item"><a class="site-nav__link" href="contacts.html" aria-current="page">Связаться</a></li>
-        <li class="site-nav__item"><a class="site-nav__link" href="form.html" aria-current="page">Форма</a></li>
-      </ul>
-    </nav>
-    <button class="theme-toggle" type="button" aria-pressed="false">Тема</button>
-  </header>
-  <nav class="breadcrumbs container" aria-label="Хлебные крошки"><a href="index.html">Главная</a> → <span>О нас</span>
-  </nav>
-  <main class="container">
-    <h1>О нас</h1>
-    <section id="history">
-      <h2>Наша история</h2>
-      <p>Текст о том, как все начиналось.</p>
-    </section>
-    <section id="team">
-      <h2>Наша команда</h2>
-      <p>Текст о команде.</p>
-    </section>
-  </main>
-  <footer class="container">
-    <p>&copy; 2025 Название вашего сайта. Все права защищены.</p>
-    <p>Телефон: +7 (123) 456-78-90</p>
-  </footer>
-  <script src="script.js"></script>
-</body>
 
+<a class="jump-link" href="#main">К содержанию</a>
+
+<header class="topbar">
+  <img class="topbar__logo" src="images.png" alt="Логотип">
+  <nav class="mainmenu">
+    <ul class="mainmenu__list">
+      <li><a class="mainmenu__link" href="index.html">Главная</a></li>
+      <li><a class="mainmenu__link mainmenu__link--current" href="about.html">О нас</a></li>
+      <li><a class="mainmenu__link" href="gallery.html">Галерея</a></li>
+      <li><a class="mainmenu__link" href="contacts.html">Контакты</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <nav class="path">
+    <a class="path__link" href="index.html">Главная</a> →
+    <span class="path__current">О нас</span>
+  </nav>
+
+  <h1>О компании</h1>
+
+  <section>
+    <h2>Наша история</h2>
+    <p>Мы начали свою деятельность с небольших проектов и постепенно выросли в полноценную команду.</p>
+  </section>
+
+  <section>
+    <h2>Команда</h2>
+    <p>У нас работают специалисты, которые любят своё дело.</p>
+  </section>
+
+  <div class="media-box">
+    <video class="media-box__video" controls poster="assets/poster.jpg" height="400">
+      <source src="vid.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+    </video>
+  </div>
+</main>
+
+<footer class="footer">
+  <p>&copy; 2024 Обновлённый сайт</p>
+  <p>Телефон: +7 (123) 456-78-90</p>
+</footer>
+
+</body>
 </html>

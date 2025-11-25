@@ -1,47 +1,87 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Контакты - Название вашего сайта</title>
-  <meta name="description" content="Краткое описание страницы контактов">
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <title>Контакты — Обновлённый сайт</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
 </head>
-
 <body>
-  <header class="site-header container">
-    <a class="site-header__brand" href="index.html">Лого нашего сайта</a>
-    <nav class="site-header__nav site-nav" aria-label="Основная навигация">
-      <ul class="site-nav__list">
-        <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
-        <li class="site-nav__item"><a class="site-nav__link" href="about.html">О нас</a></li>
-        <li class="site-nav__item"><a class="site-nav__link" href="contacts.html" aria-current="page">Связаться</a></li>
-        <li class="site-nav__item"><a class="site-nav__link" href="form.html" aria-current="page">Форма</a></li>
-      </ul>
-    </nav>
-    <button class="theme-toggle" type="button" aria-pressed="false">Тема</button>
-  </header>
-  <nav class="breadcrumbs container" aria-label="Хлебные крошки"><a href="index.html">Главная</a> →
-    <span>Контакты</span>
-  </nav>
-  <main class="container">
-    <h1>Контакты нашей компании</h1>
-    <section id="email">
-      <h2>Почта</h2>
-      <p>info@example.com</p>
-    </section>
-    <section id="tg">
-      <h2>Telegram</h2>
-      <p>@our_tg</p>
-    </section>
-  </main>
-  <footer class="container">
-    <p>&copy; 2025 Название вашего сайта. Все права защищены.</p>
-    <p>Телефон: +7 (123) 456-78-90</p>
-  </footer>
-  <script src="script.js"></script>
-</body>
 
+<a class="jump-link" href="#main">К содержанию</a>
+
+<header class="topbar">
+  <img class="topbar__logo" src="images.png" alt="Логотип">
+  <nav class="mainmenu">
+    <ul class="mainmenu__list">
+      <li><a class="mainmenu__link" href="index.html">Главная</a></li>
+      <li><a class="mainmenu__link" href="about.html">О нас</a></li>
+      <li><a class="mainmenu__link" href="gallery.html">Галерея</a></li>
+      <li><a class="mainmenu__link mainmenu__link--current" href="contacts.html">Контакты</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <nav class="path">
+    <a class="path__link" href="index.html">Главная</a> →
+    <span class="path__current">Контакты</span>
+  </nav>
+
+  <h1>Контакты</h1>
+
+  <section>
+    <h2>Телефон</h2>
+    <p><a class="contact-link" href="tel:+71234567890">+7 (123) 456-78-90</a></p>
+  </section>
+
+  <section>
+    <h2>Email</h2>
+    <p><a class="contact-link" href="mailto:mail@example.com">mail@example.com</a></p>
+  </section>
+
+  <section>
+    <h2>Обратная связь</h2>
+    <button class="action-btn" id="openDialog">Написать нам</button>
+  </section>
+
+  <dialog id="contactDialog" class="modalbox">
+    <h2>Сообщение</h2>
+
+    <form id="contactForm" class="form">
+      <div class="form__group">
+        <label for="name">Имя *</label>
+        <input id="name" name="name" required>
+      </div>
+
+      <div class="form__group">
+        <label for="email">Email *</label>
+        <input id="email" name="email" type="email" required>
+      </div>
+
+      <div class="form__group">
+        <label for="phone">Телефон *</label>
+        <input id="phone" name="phone" required>
+      </div>
+
+      <div class="form__group">
+        <label for="message">Сообщение *</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+
+      <div class="form__actions">
+        <button class="action-btn action-btn--ghost" type="button" id="closeDialog">Закрыть</button>
+        <button class="action-btn" type="submit">Отправить</button>
+      </div>
+    </form>
+  </dialog>
+</main>
+
+<footer class="footer">
+  <p>&copy; 2024 Обновлённый сайт</p>
+  <p>Телефон: +7 (123) 456-78-90</p>
+</footer>
+
+</body>
 </html>
