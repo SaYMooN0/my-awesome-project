@@ -33,6 +33,7 @@ body {
   font-family: var(--font);
   background: var(--bg);
   color: var(--fg);
+  min-width: 350px;
 }
 
 .jump-link {
@@ -399,10 +400,7 @@ main {
 }
 
 @media (max-width: 600px) {
-  .mainmenu__list {
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
+
 
   .gallery-item img {
     height: 200px;
@@ -480,15 +478,26 @@ main {
     max-width: 100%;
   }
 
+
+
+
+}
+
+@media (max-width: 500px) {
+  .mainmenu__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
   .topbar__logo {
     width: 144px;
     height: 96px;
     object-fit: cover;
   }
 
-  .mainmenu__list {
-    display: flex;
-    flex-direction: column;
+  .topbar {
+    justify-content: space-around;
   }
 }
 
